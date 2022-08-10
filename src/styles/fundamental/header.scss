@@ -1,0 +1,22 @@
+.header {
+  &__inner {
+   
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__logo {
+    
+  }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+  }
+  
+}

@@ -1,0 +1,45 @@
+.icon {
+  min-width: 1em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: "\00A0";
+}
+
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em;
+  vertical-align: middle;
+}
+
+
+.icon.icon_burger {
+  mask-image: url("../img/icons/icon_burger.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  background: $color_white;
+  width: 18px;
+  height: 15px;
+}
+
+.icon.icon_close {
+  mask-image: url("../img/icons/icon_close.svg");
+  mask-repeat: no-repeat;
+  //background-color: red;
+  background: rgba($color_white, 100%);
+  width: 14px;
+  height: 14px;
+}
+/* .icon.icon_burger {
+	mask-image: url("../img/icon/icon_burger.svg");
+	background-color: red;
+	width: 31px;
+	height: 21px;
+}
+ */

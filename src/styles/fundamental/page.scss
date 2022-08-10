@@ -1,0 +1,17 @@
+.page {
+  &_theme {
+    font-family: 'Roboto', sans-serif;
+    color: $color_white;
+    background: $color_blue_dark;
+  }
+  &_overflow {
+    overflow: hidden;
+  }
+  &__header {
+    border-bottom: 1px solid $color_blue_light;
+  }
+
+  &__footer {
+    margin-top: 20px;
+  }
+}

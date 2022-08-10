@@ -1,0 +1,23 @@
+<nav class="menu block-s {{inject.parentClass}}" data-adaptive-width="{{inject.menuBrakePoint}}">
+	<div class="menu__inner block-s__inner">
+		<div class="block-s__controller menu__controller">
+			<div class="menu__controller-icon">
+				<span class="icon icon_burger"></span>
+			</div>
+			{# <div class="menu__controller-text">Меню</div> #}
+		</div>
+		<div class="block-s__body menu__list">
+			<div class="block-s__controller menu__closer">
+				<span class="icon icon_close"></span>
+			</div>
+			
+			{% for item in menu.menu_main %}
+				{% include "blocks/menu/menu-item.njk" %}
+			{% endfor %}
+
+			<a href="/registration.html" class="button button_size_l menu__button">
+				<div class="button__text">Start earning</div>
+			</a>
+		</div>
+	</div>
+</nav>

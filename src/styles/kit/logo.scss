@@ -1,0 +1,15 @@
+.logo {
+  &__inner {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  &__img {
+    //max-width: 190px;
+    //height: 190px;
+  }
+}

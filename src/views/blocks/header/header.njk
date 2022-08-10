@@ -1,0 +1,25 @@
+<header class="header page__header">
+
+	<div class="header__inner layout__wrap">
+
+		{% set inject = {
+			"parentClass": 'header__logo'
+		} %}
+
+		{% include "blocks/logo/logo.njk" %}
+
+
+		<div class="header__menu">
+			{% set inject = {
+				menuBrakePoint: "994",
+				parentClass: "",
+				incIcon: false
+				}
+		 %}
+			{% include "blocks/menu/menu.njk" %}
+		</div>
+		
+
+	</div>
+
+</header>

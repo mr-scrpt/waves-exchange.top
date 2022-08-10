@@ -1,0 +1,44 @@
+.menu {
+
+  &__inner {
+    
+  }
+
+  &__controller {
+  }
+
+  &__controller-icon {
+  }
+
+  &__controller-text {
+  }
+
+  &__list {
+    background: $color_blue_dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include bp994-block() {
+      flex-direction: row;
+    }
+  }
+  &__item{
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 15px 0;
+    @include bp994-block() {
+      padding: 0 15px;
+    }
+  }
+
+  &__closer {
+  }
+
+  &__button {
+    @include bp994-block() {
+      margin-left: 15px;
+    }
+  }
+}

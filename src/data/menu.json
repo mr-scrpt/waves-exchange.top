@@ -1,0 +1,29 @@
+{
+	"menu_main": [
+		{
+			"name": "Start earning",
+			"icon": "",
+			"href": "#start"
+		},
+		{
+			"name": "About",
+			"icon": "",
+			"href": "#about"
+		},
+		{
+			"name": "Features",
+			"icon": "",
+			"href": "#feature"
+		},
+		{
+			"name": "Liquidity pools",
+			"icon": "",
+			"href": "#pools"
+		},
+		{
+			"name": "How to start",
+			"icon": "",
+			"href": "#how"
+		}
+	]	
+}
