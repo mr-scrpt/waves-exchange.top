@@ -32,7 +32,8 @@
 
 @import "./kit/logo.scss";
 /* Блоки Верстки */
-
+@import "./custom/banner.scss";
+@import "./custom/video.scss";
 /* Навигация */
 @import "./menu/menu.scss";
 * {

@@ -1,0 +1,10 @@
+.video {
+
+  &__inner {
+    display: flex;
+  }
+
+  &__player {
+    max-width: 100%;
+  }
+}
