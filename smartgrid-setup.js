@@ -10,7 +10,9 @@ const settings = {
     fields: "15px" /* side fields */,
   },
   breakPoints: {
-    
+    bp1440: {
+      width: "1440px" /* -> @media (max-width: 1100px) */,
+    },
     bp1220: {
       width: "1220px" /* -> @media (max-width: 1100px) */,
     },

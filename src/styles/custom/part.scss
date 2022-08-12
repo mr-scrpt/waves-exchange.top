@@ -23,15 +23,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__banner {
   }
 
   &__overmarg {
-    @include bp994-block() {
-      margin-left: -85px;
-      margin-right: -85px;
+    @include bp1440-block() {
+      margin-left: -65px;
+      margin-right: -65px;
     }
   }
   &__img {
@@ -46,6 +47,95 @@
       @include bp994-block() {
         display: block;
       }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    @include bp994-block() {
+    }
+  }
+
+  &__cell {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    @include bp994-block() {
+      //width: 50%;
+    }
+  }
+
+  &__dis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include bp994-block() {
+      width: 120px;
+      border-right: 4px solid $color_attention;
+      &_att {
+        border-color: $color_yellow;
+      }
+    }
+  }
+
+  &__dis-text {
+    width: 90px;
+    border-bottom: 4px solid $color_attention;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    @include bp994-block() {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-block {
+    width: 100%;
+    color: #959dae;
+    text-align: center;
+    @include bp994-block() {
+      width: calc(100% - 120px);
+      text-align: left;
+      padding: 0 15px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    @include bp994-block() {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__dis-imgbox {
+    width: 90px;
+    border-bottom: 4px solid $color_yellow;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include bp994-block() {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      //border-right: 4px solid $color_yellow;
+    }
+  }
+  &__dis-img {
+    @include bp994-block() {
+      height: 40px;
     }
   }
 }

@@ -1,0 +1,54 @@
+.pool {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    border: 1px solid $color_gray;
+    border-radius: 8px;
+    padding: 30px;
+  }
+
+  &__title-box {
+    margin-top: -60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    @include bp994-block() {
+      margin-top: -50px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 230px;
+    background-color: $color_blue_dark;
+    padding: 0 15px;
+    @include bp994-block() {
+      max-width: 620px;
+      padding: 0 30px;
+      font-size: 35px;
+      line-height: 42px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    @include bp994-block() {
+      width: 33.33%;
+      padding: 30px 0;
+    }
+  }
+
+  &__benefit {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: $color_blue;
+  }
+
+  &__text {
+  }
+}
