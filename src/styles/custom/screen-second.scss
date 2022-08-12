@@ -1,0 +1,49 @@
+.screen-second {
+  overflow: hidden;
+  &__inner {
+    padding-bottom: 230px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../img/bg/screen_second.png") no-repeat;
+      background-size: contain;
+      width: 230px;
+      height: 230px;
+      right: -80px;
+      bottom: 0;
+      @include bp768-block() {
+        right: 0;
+      }
+    }
+    @include bp768-block() {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 42px;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    @include bp768-block() {
+      max-width: 550px;
+
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

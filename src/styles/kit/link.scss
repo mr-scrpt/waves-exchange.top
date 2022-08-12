@@ -1,7 +1,7 @@
 .link {
   display: inline;
   text-decoration: none;
-  color: inherit;
+  color: $color_blue_medium;
   @include ts(color);
   &:hover {
     color: yellow;
