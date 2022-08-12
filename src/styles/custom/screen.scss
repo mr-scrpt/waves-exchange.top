@@ -1,8 +1,10 @@
-
 .screen {
-
   &__inner {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 15px;
+    @include bp994-block() {
+      margin-bottom: 30px;
+    }
   }
 }
