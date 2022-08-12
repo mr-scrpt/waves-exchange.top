@@ -15,11 +15,21 @@
       bottom: 0;
       @include bp768-block() {
         right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+      }
+      @include bp994-block() {
+        width: 380px;
+        height: 380px;
       }
     }
     @include bp768-block() {
       padding-top: 100px;
       padding-bottom: 100px;
+    }
+    @include bp994-block() {
+      padding-top: 160px;
+      padding-bottom: 160px;
     }
   }
   &__title {
