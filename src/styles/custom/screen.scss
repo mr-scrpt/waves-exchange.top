@@ -2,9 +2,9 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     @include bp994-block() {
-      margin-bottom: 30px;
+      //margin-bottom: 30px;
     }
   }
 }

@@ -1,0 +1,83 @@
+.screen-eighth {
+  overflow: hidden;
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 230px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../img/bg/screen_second.png") no-repeat;
+      background-size: contain;
+      width: 230px;
+      height: 230px;
+      right: -120px;
+      transform: rotate(-70deg);
+      top: 0;
+      @include bp768-block() {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include bp994-block() {
+        width: 380px;
+        height: 380px;
+      }
+      @include bp1220-block() {
+        width: 460px;
+        height: 460px;
+        right: 30px;
+      }
+    }
+    @include bp768-block() {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @include bp994-block() {
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-right: 50px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 39px;
+    @include bp994-block() {
+      font-size: 53.9043px;
+      line-height: 74px;
+      padding-right: 600px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+    @include bp768-block() {
+      max-width: 550px;
+
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include bp994-block() {
+      justify-content: flex-start;
+    }
+  }
+}
